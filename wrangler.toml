@@ -13,13 +13,13 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
 routes = [
-  { pattern = "docker.proxy.mstg.top", custom_domain = true },
-  { pattern = "quey.proxy.mstg.top", custom_domain = true },
-  { pattern = "gcr.proxy.mstg.top", custom_domain = true },
-  { pattern = "k8s-gcr.proxy.mstg.top", custom_domain = true },
-  { pattern = "k8s.proxy.mstg.top", custom_domain = true },
-  { pattern = "ghcr.proxy.mstg.top", custom_domain = true },
-  { pattern = "cloudsmith.proxy.mstg.top", custom_domain = true },
+  { pattern = "docker.lolidao.com", custom_domain = true },
+  { pattern = "quey.lolidao.com", custom_domain = true },
+  { pattern = "gcr.lolidao.com", custom_domain = true },
+  { pattern = "k8s-gcr.lolidao.com", custom_domain = true },
+  { pattern = "k8s.lolidao.com", custom_domain = true },
+  { pattern = "ghcr.lolidao.com", custom_domain = true },
+  { pattern = "cloudsmith.lolidao.com", custom_domain = true },
 ]
 
 [env.production.vars]
@@ -28,7 +28,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-route = { pattern = "docker-staging.proxy.mstg.top", custom_domain = true }
+route = { pattern = "docker-staging.lolidao.com", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
